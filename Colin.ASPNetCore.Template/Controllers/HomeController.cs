@@ -14,7 +14,6 @@ namespace Colin.ASPNetCore.Template.Controllers
         {
             return View();
         }
-
         [HttpGet]
         public ActionResult GetDemoTable(int page, int limit)
         {
