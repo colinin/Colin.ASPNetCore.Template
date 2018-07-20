@@ -1,4 +1,5 @@
-﻿<div>
+﻿@model Colin.ASPNetCore.Template.Models.SystemInfo
+<div>
     <script src="~/modules/home/index.js"></script>
     <script src="~/modules/home/navindex.js"></script>
     <div class="layui-layout layui-layout-admin">
@@ -27,14 +28,14 @@
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item layui-nav-itemed">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test" id="navMenu">
+                    @*<li class="layui-nav-item layui-nav-itemed">
                         <a class="" href="javascript:;">系统管理</a>
                         <dl class="layui-nav-child">
                             <dd><a href="javascript:;">系统设置</a></dd>
                             <dd><a href="javascript:;">语言设置</a></dd>
                             <dd><a href="javascript:;">主题设置</a></dd>
-                            <dd id="5"><a href="javascript:;" id="1">百度一下</a></dd>
+                            <dd><a href="javascript:;" id="1" name="https://www.baidu.com/">百度一下</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -53,7 +54,7 @@
                             <dd><a href="javascript:;">数据权限</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href="javascript:;">内容管理</a></li>
+                    <li class="layui-nav-item"><a href="javascript:;">内容管理</a></li>*@
                 </ul>
             </div>
         </div>
@@ -62,19 +63,11 @@
             <div class="layui-tab" lay-filter="demo" lay-allowClose="true">
                 <ul class="layui-tab-title">
                     <li class="layui-this">统计列表</li>
-                    <li>用户管理</li>
-                    <li>权限分配</li>
-                    <li>内容管理</li>
-                    <li>订单管理</li>
                 </ul>
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
                         <table id="demo" lay-filter="test"></table>
                     </div>
-                    <div class="layui-tab-item">2</div>
-                    <div class="layui-tab-item">3</div>
-                    <div class="layui-tab-item">4</div>
-                    <div class="layui-tab-item">5</div>
                 </div>
             </div>
         </div>

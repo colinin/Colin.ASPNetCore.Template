@@ -50,5 +50,94 @@ namespace Colin.ASPNetCore.Template.Controllers
             });
             return Json(datas);
         }
+        [HttpGet]
+        public ActionResult GetMainMenu()
+        {
+            var menu = new MainMenu
+            {
+                Code = 1000,
+                Text = "系统管理",
+                Href = "javascript:;",
+                IsItemed = true,
+                SubItems = new List<MainMenu>
+                {
+                    new MainMenu
+                    {
+                        Code = 10001,
+                        Text = "用户管理",
+                        Href = "javascript:;",
+                        IsItemed = false,
+                        IsOpenForm = true
+                    },
+                    new MainMenu
+                    {
+                        Code = 10002,
+                        Text = "权限管理",
+                        Href = "javascript:;",
+                        IsItemed = true,
+                        SubItems = new List<MainMenu>
+                        {
+                            new MainMenu
+                            {
+                                Code = 100021,
+                                Text = "分组权限",
+                                Href = "https://www.baidu.com/",
+                                IsItemed = false,
+                                IsOpenForm = true
+                            },
+                            new MainMenu
+                            {
+                                Code = 100022,
+                                Text = "角色权限",
+                                Href = "javascript:;",
+                                IsItemed = false,
+                                IsOpenForm = true
+                            },
+                            new MainMenu
+                            {
+                                Code = 100023,
+                                Text = "用户权限",
+                                Href = "javascript:;",
+                                IsItemed = false,
+                                IsOpenForm = true
+                            },
+                            new MainMenu
+                            {
+                                Code = 100024,
+                                Text = "数据权限",
+                                Href = "javascript:;",
+                                IsItemed = false,
+                                IsOpenForm = true
+                            }
+                        }
+                    },
+                    new MainMenu
+                    {
+                        Code = 10003,
+                        Text = "系统参数",
+                        Href = "javascript:;",
+                        IsItemed = false,
+                        IsOpenForm = true
+                    },
+                    new MainMenu
+                    {
+                        Code = 10004,
+                        Text = "测试",
+                        Href = "javascript:;",
+                        IsItemed = false,
+                        IsOpenForm = true
+                    },
+                    new MainMenu
+                    {
+                        Code = 10005,
+                        Text = "没有用",
+                        Href = "javascript:;",
+                        IsItemed = false,
+                        IsOpenForm = true
+                    }
+                }
+            };
+            return Json(menu);
+        }
     }
 }

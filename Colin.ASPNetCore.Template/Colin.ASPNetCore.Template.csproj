@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\modules\home\navindex.js~RF18988df.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\MaminMenu.cs~RF1c3a612.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 

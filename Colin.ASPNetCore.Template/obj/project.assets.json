@@ -11512,11 +11512,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iVarKey\\Source\\Repos\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template.csproj",
+      "projectUniqueName": "E:\\NET Core\\API\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template.csproj",
       "projectName": "Colin.ASPNetCore.Template",
-      "projectPath": "C:\\Users\\iVarKey\\Source\\Repos\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template.csproj",
+      "projectPath": "E:\\NET Core\\API\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template.csproj",
       "packagesPath": "C:\\Users\\iVarKey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iVarKey\\Source\\Repos\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\obj\\",
+      "outputPath": "E:\\NET Core\\API\\Colin.ASPNetCore.Template\\Colin.ASPNetCore.Template\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
