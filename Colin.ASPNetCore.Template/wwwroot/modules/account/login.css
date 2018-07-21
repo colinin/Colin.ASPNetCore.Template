@@ -1,0 +1,115 @@
+﻿body {
+    background-image: url('../../images/login.jpg');
+    background-color: #f2f2f2;
+}
+
+#foot-msg a {
+    padding: 0 5px;
+}
+
+#foot-msg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    height: 80px;
+}
+
+form {
+    width: 375px;
+}
+
+    form .layui-form-item {
+        position: relative;
+    }
+
+.layui-icon-username {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #d2d2d2;
+}
+
+.layui-icon-password {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #d2d2d2;
+}
+
+#username {
+    padding-left: 38px;
+}
+
+#password {
+    padding-left: 38px;
+}
+
+.message p {
+    margin: 5% 13%;
+    font-size: 20px;
+    color: red;
+}
+
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #5FB878;
+    color: #fff;
+}
+
+.layui-form-checked[lay-skin=primary] i {
+    border-color: #5FB878;
+    background-color: #5FB878;
+    color: #fff;
+}
+
+.layadmin-user-login-other {
+    line-height: 38px;
+    padding-top: 20px;
+}
+
+    .layadmin-user-login-other label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .layadmin-user-login-other a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+        .layadmin-user-login-other a i {
+            position: relative;
+            top: 2px;
+            font-size: 26px;
+        }
+
+.layui-icon-login-qq {
+    color: #3492ED;
+}
+
+.layui-icon-login-wechat {
+    color: #4DAF29;
+}
+
+.layui-icon-login-weibo {
+    color: #CF1900;
+}

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Serialization;
 
 namespace Colin.ASPNetCore.Template
 {
@@ -16,7 +17,13 @@ namespace Colin.ASPNetCore.Template
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                    options.SerializerSettings.DateFormatString = "yyyy-MM-dd";
+                }); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,7 +36,7 @@ namespace Colin.ASPNetCore.Template
             app.UseStaticFiles();
             app.UseMvc(options =>
             {
-                options.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
+                options.MapRoute(name: "default", template: "{controller=Account}/{action=Login}/{id?}");
             });
         }
     }

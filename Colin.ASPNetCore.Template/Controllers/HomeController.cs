@@ -14,11 +14,16 @@ namespace Colin.ASPNetCore.Template.Controllers
         {
             return View();
         }
+        public ActionResult Test()
+        {
+            return View();
+        }
+
         [HttpGet]
         public ActionResult GetDemoTable(int page, int limit)
         {
             ResultMessage<DemoTable> datas = new ResultMessage<DemoTable>();
-            datas.Data.AddRange(new List<DemoTable>
+            datas.data.AddRange(new List<DemoTable>
             {
                 new DemoTable
             {
@@ -48,6 +53,7 @@ namespace Colin.ASPNetCore.Template.Controllers
                 UserName = "Test6"
             }
             });
+            datas.count = datas.data.Count;
             return Json(datas);
         }
         [HttpGet]
@@ -58,14 +64,14 @@ namespace Colin.ASPNetCore.Template.Controllers
                 Code = 1000,
                 Text = "系统管理",
                 Href = "javascript:;",
-                IsItemed = true,
+                IsItemed = false,
                 SubItems = new List<MainMenu>
                 {
                     new MainMenu
                     {
                         Code = 10001,
                         Text = "用户管理",
-                        Href = "javascript:;",
+                        Href = "",
                         IsItemed = false,
                         IsOpenForm = true
                     },
@@ -74,7 +80,7 @@ namespace Colin.ASPNetCore.Template.Controllers
                         Code = 10002,
                         Text = "权限管理",
                         Href = "javascript:;",
-                        IsItemed = true,
+                        IsItemed = false,
                         SubItems = new List<MainMenu>
                         {
                             new MainMenu
@@ -89,7 +95,7 @@ namespace Colin.ASPNetCore.Template.Controllers
                             {
                                 Code = 100022,
                                 Text = "角色权限",
-                                Href = "javascript:;",
+                                Href = "/home/test",
                                 IsItemed = false,
                                 IsOpenForm = true
                             },

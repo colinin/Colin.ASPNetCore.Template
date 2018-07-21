@@ -74,3 +74,4 @@ E:\NET Core\API\Colin.ASPNetCore.Template\Colin.ASPNetCore.Template\obj\Debug\ne
 E:\NET Core\API\Colin.ASPNetCore.Template\Colin.ASPNetCore.Template\obj\Debug\netcoreapp2.1\Colin.ASPNetCore.Template.RazorTargetAssemblyInfo.cs
 E:\NET Core\API\Colin.ASPNetCore.Template\Colin.ASPNetCore.Template\obj\Debug\netcoreapp2.1\Colin.ASPNetCore.Template.Views.pdb
 E:\NET Core\API\Colin.ASPNetCore.Template\Colin.ASPNetCore.Template\obj\Debug\netcoreapp2.1\Colin.ASPNetCore.Template.csproj.CopyComplete
+E:\NET Core\API\Colin.ASPNetCore.Template\Colin.ASPNetCore.Template\obj\Debug\netcoreapp2.1\Razor\Views\Account\login.g.cshtml.cs

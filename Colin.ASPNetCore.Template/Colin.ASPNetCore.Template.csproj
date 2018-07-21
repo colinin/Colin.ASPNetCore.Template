@@ -5,11 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\test.cshtml" />
+    <Content Remove="wwwroot\modules\account\login.css~RFbee4a7.TMP" />
+    <Content Remove="wwwroot\modules\home\css\home.css~RF5c8155.TMP" />
     <Content Remove="wwwroot\modules\home\navindex.js~RF18988df.TMP" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Models\MaminMenu.cs~RF1c3a612.TMP" />
+    <None Remove="Views\Layout\_Layout.cshtml~RF1f7e2b0.TMP" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Home\test.cshtml" />
     <None Include="wwwroot\modules\home\index.js" />
   </ItemGroup>
 
